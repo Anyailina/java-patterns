@@ -28,9 +28,9 @@ public class AppleComputerTest {
             .isNotSameAs(original);
 
         assertThat(clone.getName()).isEqualTo(original.getName());
-        assertThat(clone.getCPU()).isEqualTo(original.getCPU());
-        assertThat(clone.getGPU()).isEqualTo(original.getGPU());
-        assertThat(clone.getRAM()).isEqualTo(original.getRAM());
+        assertThat(clone.getCpu()).isEqualTo(original.getCpu());
+        assertThat(clone.getGpu()).isEqualTo(original.getGpu());
+        assertThat(clone.getRam()).isEqualTo(original.getRam());
         assertThat(clone.getStorage()).isEqualTo(original.getStorage());
     }
 }

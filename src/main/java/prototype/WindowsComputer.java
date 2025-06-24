@@ -6,34 +6,48 @@ package prototype;
  * Реализация интерфейса Computer, представляющая компьютер на Windows.
  */
 
-public class WindowsComputer implements Computer {
+public final class WindowsComputer implements Computer {
+    /** Название компьютера. */
     private final String name;
-    private final String CPU;
-    private final String GPU;
-    private final Integer RAM;
+
+    /** Модель процессора. */
+    private final String cpu;
+
+    /** Модель графического процессора. */
+    private final String gpu;
+
+    /** Объём оперативной памяти. */
+    private final Integer ram;
+
+    /** Тип и размер накопителя. */
     private final String storage;
 
-    /**.
-     *
-     * @param name     название компьютера
-     * @param CPU      модель процессора
-     * @param GPU      модель графического процессора
-     * @param RAM      объем оперативной памяти в гигабайтах
-     * @param storage  характеристика накопителя
+    /**
+     * @param aName     название компьютера
+     * @param aCpu      модель процессора
+     * @param aGpu      модель графического процессора
+     * @param aRam      объем оперативной памяти в гигабайтах
+     * @param aStorage  характеристика накопителя
      */
 
-    public WindowsComputer(String name, String CPU, String GPU, Integer RAM, String storage) {
-        this.name = name;
-        this.CPU = CPU;
-        this.GPU = GPU;
-        this.RAM = RAM;
-        this.storage = storage;
+    public WindowsComputer(
+        final String aName,
+        final String aCpu,
+        final String aGpu,
+        final Integer aRam,
+        final String aStorage
+    ) {
+        this.name = aName;
+        this.cpu = aCpu;
+        this.gpu = aGpu;
+        this.ram = aRam;
+        this.storage = aStorage;
     }
 
 
     @Override
     public Computer clone() {
-        return new WindowsComputer(name,CPU,GPU,RAM,storage);
+        return new WindowsComputer(name, cpu, gpu, ram, storage);
     }
 
     @Override
@@ -42,18 +56,18 @@ public class WindowsComputer implements Computer {
     }
 
     @Override
-    public String getCPU() {
-        return CPU;
+    public String getCpu() {
+        return cpu;
     }
 
     @Override
-    public String getGPU() {
-        return GPU;
+    public String getGpu() {
+        return gpu;
     }
 
     @Override
-    public Integer getRAM() {
-        return RAM;
+    public Integer getRam() {
+        return ram;
     }
 
     @Override
