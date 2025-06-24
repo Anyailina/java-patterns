@@ -8,6 +8,7 @@ import prototype.Computer;
  * Проверяет, что клон имеет те же свойства, что и оригинал, но это другой объект.
  */
 public class AppleComputerTest {
+
     @Test
     void shouldCreateCloneWithSameProperties() {
 
@@ -32,4 +33,5 @@ public class AppleComputerTest {
         assertThat(clone.getRam()).isEqualTo(original.getRam());
         assertThat(clone.getStorage()).isEqualTo(original.getStorage());
     }
+
 }

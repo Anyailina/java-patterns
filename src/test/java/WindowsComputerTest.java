@@ -8,6 +8,7 @@ import prototype.WindowsComputer;
  * Проверяет, что клон имеет те же свойства, что и оригинал, но это другой объект.
  */
 public class WindowsComputerTest {
+
     @Test
     void shouldCreateCloneWithSameProperties() {
 

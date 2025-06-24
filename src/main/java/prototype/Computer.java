@@ -4,6 +4,7 @@ package prototype;
  * Интерфейс для компьютеров, поддерживающих клонирование.
  */
 public interface Computer {
+
     /**
      * Создает копию текущего компьютера.
      * @return новый экземпляр с такими же характеристиками
@@ -39,4 +40,5 @@ public interface Computer {
      * @return описание storage
      */
     String getStorage();
+
 }

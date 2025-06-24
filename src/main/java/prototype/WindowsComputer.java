@@ -1,11 +1,10 @@
 package prototype;
 
-
-
 /**
  * Реализация интерфейса Computer, представляющая компьютер на Windows.
  */
 public final class WindowsComputer implements Computer {
+
     /** Название компьютера. */
     private final String name;
 
@@ -28,7 +27,6 @@ public final class WindowsComputer implements Computer {
      * @param aRam      объем оперативной памяти в гигабайтах
      * @param aStorage  характеристика накопителя
      */
-
     public WindowsComputer(
         final String aName,
         final String aCpu,
@@ -72,4 +70,7 @@ public final class WindowsComputer implements Computer {
     public String getStorage() {
         return storage;
     }
+
 }
+
+
