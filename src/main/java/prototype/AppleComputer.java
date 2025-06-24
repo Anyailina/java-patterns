@@ -3,7 +3,6 @@ package prototype;
 /**
  * Реализация интерфейса Computer, представляющая компьютер на Windows.
  */
-
 public final class AppleComputer implements Computer {
     /** Название компьютера. */
     private final String name;
@@ -19,6 +18,7 @@ public final class AppleComputer implements Computer {
 
     /** Тип и размер накопителя. */
     private final String storage;
+
     /**
      * @param aName     название компьютера
      * @param aCpu      модель процессора
@@ -26,6 +26,7 @@ public final class AppleComputer implements Computer {
      * @param aRam      объем оперативной памяти в гигабайтах
      * @param aStorage  характеристика накопителя
      */
+
     public AppleComputer(
         final String aName,
         final String aCpu,

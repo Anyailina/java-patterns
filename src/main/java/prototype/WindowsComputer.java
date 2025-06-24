@@ -20,6 +20,7 @@ public final class WindowsComputer implements Computer {
 
     /** Тип и размер накопителя. */
     private final String storage;
+
     /**
      * @param aName     название компьютера
      * @param aCpu      модель процессора
@@ -27,6 +28,7 @@ public final class WindowsComputer implements Computer {
      * @param aRam      объем оперативной памяти в гигабайтах
      * @param aStorage  характеристика накопителя
      */
+
     public WindowsComputer(
         final String aName,
         final String aCpu,
@@ -40,7 +42,6 @@ public final class WindowsComputer implements Computer {
         this.ram = aRam;
         this.storage = aStorage;
     }
-
 
     @Override
     public Computer clone() {

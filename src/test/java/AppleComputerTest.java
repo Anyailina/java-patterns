@@ -7,7 +7,6 @@ import prototype.Computer;
  * Тестирование клонирования AppleComputer.
  * Проверяет, что клон имеет те же свойства, что и оригинал, но это другой объект.
  */
-
 public class AppleComputerTest {
     @Test
     void shouldCreateCloneWithSameProperties() {
