@@ -1,6 +1,12 @@
 package state;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public final class NewOrderState implements IOrderState {
+
+    private static final Logger LOG =
+        LogManager.getLogger(CanceledOrderState.class);
 
     @Override
     public void pay(final Order order) {
@@ -14,7 +20,7 @@ public final class NewOrderState implements IOrderState {
 
     @Override
     public void deliver(final Order order) {
-        System.out.println("Сначала оплатите заказ");
+        LOG.info("Сначала оплатите заказ");
     }
 
 }
