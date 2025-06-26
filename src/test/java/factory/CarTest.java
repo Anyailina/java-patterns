@@ -1,7 +1,8 @@
+package factory;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import factory.logistics.impl.Logistics;
 import factory.logistics.RoadLogistics;
-import factory.TransportType;
 import org.junit.jupiter.api.Test;
 
 /**

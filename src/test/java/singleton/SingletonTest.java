@@ -1,6 +1,7 @@
+package singleton;
+
 import static org.junit.jupiter.api.Assertions.assertSame;
 import org.junit.jupiter.api.Test;
-import singleton.Singleton;
 
 class SingletonTest {
 

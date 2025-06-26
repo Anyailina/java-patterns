@@ -1,7 +1,7 @@
+package prototype;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
-import prototype.Computer;
-import prototype.WindowsComputer;
 
 /**
  * Тестирование клонирования WindowsComputer.

@@ -1,11 +1,8 @@
+package state;
+
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import state.CanceledOrderState;
-import state.DeliverOrderState;
-import state.NewOrderState;
-import state.Order;
-import state.PaidOrderState;
 
 public class OrderStateTest {
 
