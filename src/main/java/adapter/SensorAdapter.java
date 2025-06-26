@@ -1,4 +1,4 @@
-package state;
+package adapter;
 
 /**
  * Адаптер для преобразования класса.

@@ -1,9 +1,9 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
-import state.DigitalSensor;
-import state.FahrenheitSensor;
-import state.SensorAdapter;
+import adapter.DigitalSensor;
+import adapter.FahrenheitSensor;
+import adapter.SensorAdapter;
 
 class SensorAdapterTest {
 
